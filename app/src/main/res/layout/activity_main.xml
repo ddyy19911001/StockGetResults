@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/normal_title"/>
+    <com.dy.fastframework.tablayout.RecyclerTabLayout
+        android:background="#fff"
+        android:id="@+id/fold_tab_layout"
+        app:rtl_tabOnScreenLimit="3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:rtl_tabIndicatorColor="@color/very_red"
+        app:rtl_tabIndicatorHeight="5dp"
+        app:rtl_isTabIndicatorRound="true"
+        app:rtl_tabIndicatorLeftRightPadding="80dp"
+        app:rtl_tabBackground="@null"
+        app:rtl_tabTextAppearance="@style/TableText"
+        app:rtl_tabSelectedTextColor="@color/very_red"
+        app:rtl_tabMinWidth="100dp"
+        app:rtl_tabMaxWidth="200dp"
+        app:rtl_tabPaddingStart="12dp"
+        app:rtl_tabPaddingTop="0dp"
+        app:rtl_tabPaddingEnd="12dp"
+        app:rtl_tabPaddingBottom="0dp"
+        app:rtl_tabPadding="0dp"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fold_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

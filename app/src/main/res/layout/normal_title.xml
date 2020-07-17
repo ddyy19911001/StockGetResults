@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/ll_title"
+    android:elevation="1dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+    <RelativeLayout
+        android:elevation="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ll_et_search"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="55dp"
+            android:paddingRight="12dp"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#333"
+            android:textStyle="bold"
+            android:text="我是标题"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_centerVertical="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/ic_back"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/title_shadow_bg"
+        />
+</LinearLayout>
